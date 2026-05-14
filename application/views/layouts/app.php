@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -7,7 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <meta name="generator" content="Jekyll v3.8.6">
-        <title><?= isset($title) ? $title : 'App-CIShop'?> - CI - E-Commerc</title>
+        <title><?= isset($title) ? $title : 'App-CIShop-Homepage'?> </title>
 
         <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/navbar-fixed/">
 
