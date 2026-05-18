@@ -61,8 +61,8 @@ class Register_model extends MY_Model
 		$data = [
 			'name'		=> $input->name,
 			'email' 	=> strtolower($input->email),
-			'password' 	=> password_hash($input->password, PASSWORD_DEFAULT) // hashEncrypt($input->password),
-			'role'		=> 'member'
+			'password' 	=> password_hash($input->password, PASSWORD_DEFAULT), // hashEncrypt($input->password),
+			'role'		=> 'member',
 		];
 
 		// Insert data ke database
