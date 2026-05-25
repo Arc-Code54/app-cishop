@@ -28,7 +28,7 @@
 							<!-- <input type="password" class="form-control" required> -->
 							<?= form_password('password', '', ['class' => 'form-control', 'placeholder' => 'Masukan password minimal 8 karakter', 'required' => true]); ?>
 							<?= form_error('password'); ?>
-							</div>
+						</div>
 						<div class="form-group">
 							<label for="">Konfirmasi Password</label>
 							<!-- <input type="password" class="form-control" required> -->
