@@ -13,16 +13,6 @@
         <!-- Bootstrap core CSS -->
         <link href="<?= base_url('assets/libs/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
 
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-        <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
-        <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
-        <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#563d7c">
-
         <!-- Fontawesome -->
         <link rel="stylesheet" href="<?= base_url('assets/libs/fontawesome/css/all.min.css'); ?>">
         <!-- Bootstrap -->
@@ -39,7 +29,22 @@
 		<?php $this->load->view($page); ?>
 		<!-- End Content -->
 
+        <!-- Javascipt -->
 		<script src="<?= base_url('assets/libs/jquery/jquery-3.5.0.min.js'); ?>"></script>
         <script src="<?= base_url('assets/libs/bootstrap/js/bootstrap.bundle.min.js'); ?>" ></script>
+        <script type="text/javascript">
+        function createSlug() {
+            const title = document.getElementById('title').value;
+            const slugInput = document.getElementById('slug');
+            
+            const slug = title.toLowerCase()
+                            .trim()
+                            .replace(/[^a-z0-9 -]/g, '') // Hapus karakter spesial
+                            .replace(/\s+/g, '-')        // Ganti spasi dengan minus
+                            .replace(/-+/g, '-');        // Satukan minus yang beruntun
+                            
+            slugInput.value = slug;
+        }
+        </script>
     </body>
 </html>

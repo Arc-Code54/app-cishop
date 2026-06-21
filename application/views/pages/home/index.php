@@ -117,42 +117,42 @@
 			</div>
 			<div class="col-md-3">
 					
-					<div class="row">
-						<div class="col-md-12">
-							<div class="card mb-3">
-								<div class="card-header">
-									Pencarian
-								</div>
-								<div class="card-body">
-									<form action="">
-										<div class="input-group">
-											<input type="text" class="form-control">
-											<div class="input-group-append">
-												<button class="btn btn-primary">Cari</button>
-											</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card mb-3">
+							<div class="card-header">
+								Pencarian
+							</div>
+							<div class="card-body">
+								<form action="">
+									<div class="input-group">
+										<input type="text" class="form-control">
+										<div class="input-group-append">
+											<button class="btn btn-primary">Cari</button>
 										</div>
-									</form>
-								</div>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
-				
-					<div class="row">
-						<div class="col-md-12">
-							<div class="card mb-3">
-								<div class="card-header">
-									Kategori
-								</div>
-								
-									<ul class="list-group list-group-flush">
-										<li class="list-group-item">Semua kategori</li>
-										<li class="list-group-item">Kategori 1</li>
-										<li class="list-group-item">Kategori 2</li>
-										</ul>
-								
+				</div>
+			
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card mb-3">
+							<div class="card-header">
+								Kategori
 							</div>
+							
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">Semua kategori</li>
+								<li class="list-group-item">Kategori 1</li>
+								<li class="list-group-item">Kategori 2</li>
+							</ul>
+							
 						</div>
 					</div>
+				</div>
 		</div>
 	</div>
 </main>
