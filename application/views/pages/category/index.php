@@ -42,16 +42,14 @@
 								<td><?= $row->slug ?></td>
 								<td></td>
 								<td>
-									<form action="#">
-										<a href="">
-											<button class="btn-sm">
-												<i class="fas fa-edit text-info"></i>
-											</button>
-										</a>
-										<button class="btn btn-sm" type="submit" onclick="return confirm('are you sure?')">
-											<i class="fas fa-trash text-danger"></i>
+									<a href="<?= base_url("category/edit/$row->id"); ?>">
+										<button class="btn">
+											<i class="fas fa-edit text-info"></i>
 										</button>
-									</form>
+									</a>
+									<button class="btn btn-sm" type="submit" onclick="return confirm('are you sure?')">
+										<i class="fas fa-trash text-danger"></i>
+									</button>
 								</td>
 							</tr>
 							<?php endforeach; ?>
