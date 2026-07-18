@@ -44,13 +44,13 @@
 								<td><?= $row->slug ?></td>
 								<td></td>
 								<td>
+									
+									<a href="<?= base_url("category/edit/$row->id") ?>" class="btn">
+										<i class="fas fa-edit text-info"></i>
+									</a>
+
 									<?= form_open("category/delete/$row->id", ['method' => 'POST']) ?>
 									<?= form_hidden('id', $row->id); ?>
-									<a href="<?= base_url("category/edit/$row->id") ?>">
-										<button class="btn">
-											<i class="fas fa-edit text-info"></i>
-										</button>
-									</a>
 									<button class="btn btn-sm" type="submit" onclick="return confirm('Apakah anda yakin?')">
 										<i class="fas fa-trash text-danger"></i>
 									</button>
